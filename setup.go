@@ -36,12 +36,13 @@ func setup(c *caddy.Controller) error {
 		return re
 	})
 
-	c.OnStartup(func() error {
+/*	c.OnStartup(func() error {
 		once.Do(func() {
 			metrics.MustRegister(c, cacheHits, cacheMisses, cacheDrops, redisErr)
 		})
 		return nil
 	})
+*/
 
 	return nil
 }
